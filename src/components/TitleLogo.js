@@ -14,7 +14,7 @@ class TitleLogo extends Component {
     return (
       <div className={titleId} onClick={this.titleClick.bind(this)}>
         <h1 id="titleLogoH1">
-          Benny <span id="lastnameInTitleLogo">Carlsson</span>
+          Jesse <span id="lastnameInTitleLogo">Baber</span>
         </h1>
       </div>
     )

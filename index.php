@@ -1,4 +1,4 @@
 <?php
-header("Location: http://bennycarlsson.com");
+header("Location: http://jessebaber.uk");
 exit();
  ?>

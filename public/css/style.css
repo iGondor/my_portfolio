@@ -8,7 +8,7 @@ html {
   line-height: 1.6;
 }
 a {
-  color: black;
+  color: #333;
 }
 body {
   width: 100vw;
@@ -20,9 +20,10 @@ body {
 }
 h1,
 h2,
-h3 {
-  color: #00838f;
+h3{
+  color: #ffa7c4;
 }
+
 #content {
 }
 .titleLogoDiv {
@@ -72,31 +73,32 @@ h3 {
 .titleLogoDiv h1 {
   color: white;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  color: #00838f;
+  font-family: 'Heebo', sans-serif;
+  font-weight: 100;
+/*  color: #ffa7c4; */
+  color: #d23669;
 }
 @keyframes titleLogoh1ToBig {
   from {
     margin-top: 0px;
-    font-weight: 400;
+    font-weight: 500;
   }
   to {
-    font-weight: 300;
+    font-weight: 100;
   }
 }
 @keyframes titleLogoh1ToSmall {
   from {
-    font-weight: 300;
+    font-weight: 100;
   }
   to {
-    font-weight: 400;
+    font-weight: 500;
   }
 }
 .titleLogoDiv-small h1 {
   animation-name: titleLogoh1ToSmall;
   animation-duration: 1s;
-  font-weight: 400;
+  font-weight: 500;
   margin-top: 0px;
 }
 .titleLogoDiv-big h1 {
@@ -112,15 +114,15 @@ h3 {
   width: 96%;
   margin: 0 auto;
   background-color: white;
-  -webkit-box-shadow: 0px 0px 2px 2px rgba(117, 117, 117, 0.86);
-  -moz-box-shadow: 0px 0px 2px 2px rgba(117, 117, 117, 0.86);
-  box-shadow: 0px 0px 2px 2px rgba(117, 117, 117, 0.86);
+  -webkit-box-shadow: 0px 0px 2px 2px #ffa7c4;
+  -moz-box-shadow: 0px 0px 2px 2px #ffa7c4;
+  box-shadow: 0px 0px 2px 2px #ffa7c4;
 }
 #searchBarHamburgerMenuIcon {
-  color: #7d7d7d !important;
+  color: #d23669 !important;
   font-size: 35px !important;
   position: absolute !important;
-  font-color: green;
+  font-color: #d23669;
 }
 #searchBar {
   background-color: white;
@@ -139,7 +141,7 @@ h3 {
   box-sizing: border-box;
 }
 .focusBorder {
-  border: 1px solid #4d90fe;
+  border: 1px solid #d23669;
 }
 #DropDownMenuDiv {
   padding-top: 38px;
@@ -303,14 +305,14 @@ h3 {
 #socialMediaAbout a {
   margin: 3px;
   font-size: 3em;
-  color: #00838f;
+  color: #ffa7c4;
 }
 #socialMediaAbout a:hover {
-  color: #025e67;
+  color: #d23669;
 }
 #contactContent {
   position: relative;
-  color: black;
+  color: #333;
   height: 100vh;
 }
 #contactdiv {
@@ -325,9 +327,8 @@ h3 {
   z-index: -1;
 }
 #mailtag {
-  color: #00838f;
   text-decoration: none;
-  color: #00838f;
+  color: #ffa7c4;
   text-decoration: none;
   font-weight: 400;
   font-size: 131%;
@@ -335,10 +336,10 @@ h3 {
 #socialMediaContact a {
   margin: 15px;
   font-size: 7em;
-  color: #00838f;
+  color: #ffa7c4;
 }
 #socialMediaContact a:hover {
-  color: #025e67;
+  color: #d23669;
 }
 .mobileOnly {
   display: none;
@@ -353,7 +354,7 @@ h3 {
   }
   /* optional: show position indicator in red */
   ::-webkit-scrollbar-thumb {
-    background: #ff0000;
+    background: #d23669;
   }
   #projectContent {
     margin-top: 0px;
@@ -399,11 +400,11 @@ h3 {
     margin-top: 23px;
   }
   .menuIcons svg {
-    color: #00838f !important;
+    color: #ffa7c4 !important;
   }
   .menuIconsActive svg {
-    color: #00838f !important;
-    border-bottom: 1px solid #00838f;
+    color: #ffa7c4 !important;
+    border-bottom: 1px solid #ffa7c4;
   }
   #paperAvatar {
     width: 20vw;
@@ -452,7 +453,7 @@ h3 {
   }
   /* optional: show position indicator in red */
   ::-webkit-scrollbar-thumb {
-    background: #ff0000;
+    background: #d23669;
   }
   .flex-container {
     padding: 0;

@@ -1,17 +1,30 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js
+  D:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js
 
 PATH: 
-  C:\Python27\;C:\Python27\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Program Files\apache-maven-3.5.0\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files (x86)\Yarn\bin;C:\Users\ABrownApple\AppData\Roaming\npm;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_152\bin;C:\Users\ABrownApple\AppData\Local\Microsoft\WindowsApps;C:\Users\ABrownApple\AppData\Local\atom\bin;C:\Users\ABrownApple\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\ABrownApple\AppData\Local\Yarn\bin;C:\Users\ABrownApple\AppData\Roaming\npm;C:\Users\ABrownApple\AppData\Local\Android\Sdk\platform-tools;
+  C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files\Python37\Scripts\;C:\Program Files\Python37\;C:\Program Files\PHP\v7.1;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\Program Files (x86)\Python36-32\Scripts\;C:\Program Files (x86)\Python36-32\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;D:\Tools\;C:\WINDOWS\System32\OpenSSH\;D:\Tools\cmder;C:\Program Files\Microsoft VS Co;C:\Program Files\Microsoft VS Code\bin;C:\Users\j.baber\AppData\Roaming\Python\Python37\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\WinSCP\;D:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files\PowerShell\6\;D:\OneDrive\Documents\Scripts;C:\Program Files (x86)\Yarn\bin\;C:\Users\j.baber\scoop\shims;C:\Users\j.baber\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Fiddler;C:\Users\j.baber\.dotnet\tools;C:\Users\j.baber\AppData\Local\Microsoft\WindowsApps;C:\Users\j.baber\AppData\Roaming\npm;C:\Users\j.baber\AppData\Local\Yarn\bin
 
 Yarn version: 
-  1.3.2
+  1.15.2
 
 Node version: 
-  9.2.0
+  10.15.1
 
 Platform: 
   win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/react-scripts/-/react-scripts-0.6.1.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:130168:19)
+      at Object.onceWrapper (events.js:277:13)
+      at ClientRequest.emit (events.js:189:13)
+      at TLSSocket.emitRequestTimeout (_http_client.js:662:40)
+      at Object.onceWrapper (events.js:277:13)
+      at TLSSocket.emit (events.js:189:13)
+      at TLSSocket.Socket._onTimeout (net.js:443:8)
+      at ontimeout (timers.js:436:11)
+      at tryOnTimeout (timers.js:300:5)
+      at listOnTimeout (timers.js:263:5)
 
 npm manifest: 
   {
@@ -22,17 +35,25 @@ npm manifest:
       "react-scripts": "0.6.1"
     },
     "dependencies": {
+      "material-ui": "^0.20.0",
       "react": "^15.3.2",
       "react-dom": "^15.3.2",
       "react-motion": "^0.4.5",
-      "react-swipeable-views": "^0.8.0"
+      "react-swipeable-views": "^0.8.0",
+      "yarn": "^1.15.2"
     },
     "scripts": {
       "start": "react-scripts start",
       "build": "react-scripts build",
       "test": "react-scripts test --env=jsdom",
       "eject": "react-scripts eject"
-    }
+    },
+    "browserslist": [
+      ">10%",
+      "not dead",
+      "not ie <= 11",
+      "not op_mini all"
+    ]
   }
 
 yarn manifest: 
@@ -40,6 +61,3 @@ yarn manifest:
 
 Lockfile: 
   No lockfile
-
-Trace: 
-  Error: EPERM: operation not permitted, copyfile 'C:\Users\ABrownApple\AppData\Local\Yarn\cache\v1\npm-react-scripts-0.6.1-526cc472ae0c0de6bc4fdcbb198af2a62c6d4671\node_modules\promise\lib\es6-extensions.js' -> 'C:\Users\ABrownApple\Documents\Projects\my_portfolio\node_modules\react-scripts\node_modules\promise\lib\es6-extensions.js'

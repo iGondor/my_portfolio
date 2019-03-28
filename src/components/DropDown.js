@@ -6,7 +6,6 @@ import { Tabs, Tab } from "material-ui/Tabs"
 import SwipeableViews from "react-swipeable-views"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
-import Projects from "./pages/Projects"
 
 const styles = {
   headline: {
@@ -18,13 +17,13 @@ const styles = {
   tab: {
     fontSize: 24,
     backgroundColor: "#FAFAFE",
-    color: "#00838f",
-    fontColor: "#00838f"
+    color: "#ffa7c4",
+    fontColor: "#ffa7c4"
   },
   activeTab: {
     fontSize: 24,
     backgroundColor: "#FAFAFE",
-    color: "#00838f",
+    color: "#ffa7c4",
     textDecoration: "underline"
   },
   tabs: {
@@ -77,9 +76,6 @@ class DropDown extends Component {
             <About />
           </div>
           <div style={styles.slide}>
-            <Projects />
-          </div>
-          <div style={styles.slide}>
             <Contact />
           </div>
         </SwipeableViews>
@@ -104,22 +100,15 @@ class MyTabs extends Component {
               style={
                 this.props.slideIndex === 1 ? styles.activeTab : styles.tab
               }
-              label="ME"
+              label="me"
               value={1}
             />
             <Tab
               style={
                 this.props.slideIndex === 2 ? styles.activeTab : styles.tab
               }
-              label="PROJECTS"
+              label="contact"
               value={2}
-            />
-            <Tab
-              style={
-                this.props.slideIndex === 3 ? styles.activeTab : styles.tab
-              }
-              label="CONTACT"
-              value={3}
             />
           </Tabs>
         </span>
@@ -157,26 +146,10 @@ class MyTabs extends Component {
                   }
                 >
                   {" "}
-                  <Folder />
-                </span>
-              }
-              value={2}
-            />
-            <Tab
-              style={styles.tab}
-              icon={
-                <span
-                  className={
-                    this.props.slideIndex === 3
-                      ? "menuIconsActive"
-                      : "menuIcons"
-                  }
-                >
-                  {" "}
                   <Email />
                 </span>
               }
-              value={3}
+              value={2}
             />
           </Tabs>
         </span>

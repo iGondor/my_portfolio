@@ -19,3 +19,11 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
+
+- task: AzureRmWebAppDeployment@3
+  inputs:
+    azureSubscription: 'jessebaber.uk azure connection'
+    WebAppName: 'jessebaber'
+    Package: '$(System.DefaultWorkingDirectory)/build'
+    GenerateWebConfig: true
+    WebConfigParameters: '-Handler iisnode -NodeStartFile server.js -appType node'

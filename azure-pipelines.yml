@@ -25,5 +25,5 @@ steps:
     azureSubscription: 'jessebaber.uk azure connection'
     WebAppName: 'jessebaber'
     Package: '$(System.DefaultWorkingDirectory)/build'
-    GenerateWebConfig: true
+    GenerateWebConfig: false
     WebConfigParameters: '-Handler iisnode -NodeStartFile server.js -appType node'

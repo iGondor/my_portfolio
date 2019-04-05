@@ -21,15 +21,15 @@ class Contact extends Component {
 class SocialMedia extends Component {
   render() {
     return (
-      <div id="socialMediaContact">
-        <a
-          href="https://www.linkedin.com/in/jessebaber"
-          target="_blank"
-        >
-          <i className="fa fa-linkedin-square" aria-hidden="true" />
+      <div id="socialMediaAbout">
+        <a href="https://www.linkedin.com/in/JesseBaber" target="_blank">
+          <i className="fab fa-linkedin-square" aria-hidden="true" />
         </a>
-        <a href="https://twitter.com/@iGondor" target="_blank">
-          <i className="fa fa-twitter-square" aria-hidden="true" />
+        <a href="https://twitter.com/iGondor" target="_blank">
+          <i className="fab fa-twitter-square" aria-hidden="true" />
+        </a>
+        <a href="https://github.com/iGondor" target="_blank">
+          <i className="fab fa-github-square" aria-hidden="true" />
         </a>
       </div>
     )

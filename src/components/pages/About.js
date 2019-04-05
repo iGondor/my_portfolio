@@ -18,13 +18,10 @@ class About extends Component {
           </Paper>
           </span>
           <div id="aboutTextDiv">
-            <h2>Hello World!</h2>
+            <h2>> hello</h2>
             <p>
-              Hi I'm Jesse 2
+              I am a quick-learning and flexible DevOps Engineer with a highly logical mind-set, excellent interpersonal skills, and a wealth of experience in customer-facing DevOps consultancy for leading global Cloud Service Providers, and the UK’s premier Microsoft Azure and Microsoft System Center specialists.
             </p>
-<center>
-<h2>its not all about you - it's all about me</h2>
-</center>
             <Chips />
             <SocialMediaPhone />
           </div>
@@ -50,7 +47,17 @@ class Chips extends Component {
         <h3>Skills / Knowledge</h3>
         <div style={styles.wrapper}>
         <Chip style={styles.chip}>DevOps</Chip>
-        <Chip style={styles.chip}>etc</Chip>
+        <Chip style={styles.chip}>Azure</Chip>
+        <Chip style={styles.chip}>AWS</Chip>
+        <Chip style={styles.chip}>Windows Server</Chip>
+        <Chip style={styles.chip}>Linux</Chip>
+        <Chip style={styles.chip}>git</Chip>
+        <Chip style={styles.chip}>CI/CD</Chip>
+        <Chip style={styles.chip}>SQL</Chip>
+        <Chip style={styles.chip}>Docker</Chip>
+        <Chip style={styles.chip}>OpenShift/OKD</Chip>
+        <Chip style={styles.chip}>Kubrenetes</Chip>
+        <Chip style={styles.chip}>System Center</Chip>
         </div>
       </div>
     )
@@ -78,17 +85,14 @@ class SocialMedia extends Component {
   render() {
     return (
       <div id="socialMediaAbout">
-        <a
-          href="https://www.linkedin.com/in/JesseBaber"
-          target="_blank"
-        >
-          <i className="fa fa-linkedin-square" aria-hidden="true" />
+        <a href="https://www.linkedin.com/in/JesseBaber" target="_blank">
+          <i className="fab fa-linkedin-square" aria-hidden="true" />
         </a>
         <a href="https://twitter.com/iGondor" target="_blank">
-          <i className="fa fa-twitter-square" aria-hidden="true" />
+          <i className="fab fa-twitter-square" aria-hidden="true" />
         </a>
         <a href="https://github.com/iGondor" target="_blank">
-          <i className="fa fa-github-square" aria-hidden="true" />
+          <i className="fab fa-github-square" aria-hidden="true" />
         </a>
       </div>
     )

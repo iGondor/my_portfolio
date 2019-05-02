@@ -14,7 +14,7 @@ class About extends Component {
         <Paper id="paperContent" zDepth={2}>
         <span className="desktopOnly">
           <Paper id="paperAvatar" zDepth={4} circle={true}>
-            <Avatar id="avatarImage" src="images/JesseBaber.jpg" />
+            <Avatar id="avatarImage" src="images/head.png" />
           </Paper>
           </span>
           <div id="aboutTextDiv">
@@ -23,9 +23,9 @@ class About extends Component {
               I am a quick-learning and flexible DevOps Engineer with a highly logical mind-set, excellent interpersonal skills, and a wealth of experience in customer-facing DevOps consultancy for leading global Cloud Service Providers, and the UK’s premier Microsoft Azure and Microsoft System Center specialists.
             </p>
             <Chips />
+            <SocialMediaDesktop />
             <SocialMediaPhone />
           </div>
-          <SocialMediaDesktop />
         </Paper>
       </div>
     )
@@ -86,13 +86,13 @@ class SocialMedia extends Component {
     return (
       <div id="socialMediaAbout">
         <a href="https://www.linkedin.com/in/JesseBaber" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-linkedin-square" aria-hidden="true" />
+          <i class="fab fa-linkedin-square" aria-hidden="true" />
         </a>
         <a href="https://twitter.com/iGondor" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-twitter-square" aria-hidden="true" />
+          <i class="fab fa-twitter-square" aria-hidden="true" />
         </a>
         <a href="https://github.com/iGondor" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-github-square" aria-hidden="true" />
+          <i class="fab fa-github-square" aria-hidden="true" />
         </a>
       </div>
     )

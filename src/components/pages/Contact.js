@@ -23,13 +23,13 @@ class SocialMedia extends Component {
     return (
       <div id="socialMediaAbout">
         <a href="https://www.linkedin.com/in/JesseBaber" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-linkedin-square" aria-hidden="true" />
+          <i class="fab fa-linkedin-square" aria-hidden="true" />
         </a>
         <a href="https://twitter.com/iGondor" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-twitter-square" aria-hidden="true" />
+          <i class="fab fa-twitter-square" aria-hidden="true" />
         </a>
         <a href="https://github.com/iGondor" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-github-square" aria-hidden="true" />
+          <i class="fab fa-github-square" aria-hidden="true" />
         </a>
       </div>
     )

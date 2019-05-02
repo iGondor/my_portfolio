@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import { Person, Email } from '@material-ui/icons';
 import Tab from '@material-ui/core/Tab';
 import Tabs from '@material-ui/core/Tabs';
 import SwipeableViews from "react-swipeable-views"

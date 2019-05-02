@@ -3,7 +3,6 @@ import FontIcon from "@material-ui/core/FontIcon"
 import DropDown from "./DropDown.js"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
-import Projects from "./pages/Projects"
 
 class SearchBar extends Component {
   constructor(props) {
@@ -54,7 +53,6 @@ class SearchBar extends Component {
           )}
         </div>
         {this.state.showThisPage === "About" ? <About /> : ""}
-        {this.state.showThisPage === "Projects" ? <Projects /> : ""}
         {this.state.showThisPage === "Contact" ? <Contact /> : ""}
       </div>
     )

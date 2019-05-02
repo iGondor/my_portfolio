@@ -263,7 +263,7 @@ h3{
   text-align: center;
 }
 #paperContent {
-  background-color: #fafafe !important;
+  background-color: transparent;
   box-shadow: none !important;
   margin: auto;
   margin-top: 50px;
@@ -299,7 +299,7 @@ h3{
   position: absolute;
   right: 1%;
   bottom: 1%;
-  text-align: right;
+  text-align: center;
   width: 100%;
 }
 #socialMediaAbout a {

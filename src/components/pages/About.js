@@ -1,7 +1,7 @@
 import React, { Component } from "react"
-import Avatar from "material-ui/Avatar"
-import Paper from "material-ui/Paper"
-import Chip from "material-ui/Chip"
+import Avatar from "@material-ui/core/Avatar"
+import Paper from "@material-ui/core/Paper"
+import Chip from "@material-ui/core/Chip"
 
 class About extends Component {
   constructor(props) {
@@ -46,18 +46,18 @@ class Chips extends Component {
       <div id="listAbout">
         <h3>Skills / Knowledge</h3>
         <div style={styles.wrapper}>
-        <Chip style={styles.chip}>DevOps</Chip>
-        <Chip style={styles.chip}>Azure</Chip>
-        <Chip style={styles.chip}>AWS</Chip>
-        <Chip style={styles.chip}>Windows Server</Chip>
-        <Chip style={styles.chip}>Linux</Chip>
-        <Chip style={styles.chip}>git</Chip>
-        <Chip style={styles.chip}>CI/CD</Chip>
-        <Chip style={styles.chip}>SQL</Chip>
-        <Chip style={styles.chip}>Docker</Chip>
-        <Chip style={styles.chip}>OpenShift/OKD</Chip>
-        <Chip style={styles.chip}>Kubrenetes</Chip>
-        <Chip style={styles.chip}>System Center</Chip>
+        <Chip variant="outlined" style={styles.chip}>DevOps</Chip>
+        <Chip variant="outlined" style={styles.chip}>Azure</Chip>
+        <Chip variant="outlined" style={styles.chip}>AWS</Chip>
+        <Chip variant="outlined" style={styles.chip}>Windows Server</Chip>
+        <Chip variant="outlined" style={styles.chip}>Linux</Chip>
+        <Chip variant="outlined" style={styles.chip}>git</Chip>
+        <Chip variant="outlined" style={styles.chip}>CI/CD</Chip>
+        <Chip variant="outlined" style={styles.chip}>SQL</Chip>
+        <Chip variant="outlined" style={styles.chip}>Docker</Chip>
+        <Chip variant="outlined" style={styles.chip}>OpenShift/OKD</Chip>
+        <Chip variant="outlined" style={styles.chip}>Kubrenetes</Chip>
+        <Chip variant="outlined" style={styles.chip}>System Center</Chip>
         </div>
       </div>
     )
@@ -85,13 +85,13 @@ class SocialMedia extends Component {
   render() {
     return (
       <div id="socialMediaAbout">
-        <a href="https://www.linkedin.com/in/JesseBaber" target="_blank">
+        <a href="https://www.linkedin.com/in/JesseBaber" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-linkedin-square" aria-hidden="true" />
         </a>
-        <a href="https://twitter.com/iGondor" target="_blank">
+        <a href="https://twitter.com/iGondor" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-twitter-square" aria-hidden="true" />
         </a>
-        <a href="https://github.com/iGondor" target="_blank">
+        <a href="https://github.com/iGondor" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-github-square" aria-hidden="true" />
         </a>
       </div>

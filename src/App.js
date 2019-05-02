@@ -1,6 +1,25 @@
 import React, { Component } from "react"
 import Menu from "./components/Menu.js"
-import MuiThemeProvider from "material-ui/styles/MuiThemeProvider"
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+
+const theme = createMuiTheme({
+   typography: {
+    useNextVariants: true,
+  }, 
+  props:{
+    MuiTabs:{
+      centered: true,
+      variant: "standard",
+      indicator: { display: "none" },
+    },
+    MuiButtonBase: {
+      // The properties to apply
+      disableRipple: true, // No more ripple, on the whole application 💣!
+      disableTouchRipple: true,
+    },    
+
+  }
+});
 
 class Index extends Component {
   render() {
@@ -15,10 +34,11 @@ class Index extends Component {
     )
   }
 }
+
 class App extends Component {
   render() {
     return (
-      <MuiThemeProvider>
+      <MuiThemeProvider theme={theme}>
         <Index />
       </MuiThemeProvider>
     )

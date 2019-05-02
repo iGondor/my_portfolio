@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import FontIcon from "material-ui/FontIcon"
+import FontIcon from "@material-ui/core/FontIcon"
 import DropDown from "./DropDown.js"
 import About from "./pages/About"
 import Contact from "./pages/Contact"

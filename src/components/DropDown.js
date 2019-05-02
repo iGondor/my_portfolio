@@ -1,8 +1,7 @@
 import React, { Component } from "react"
-import Person from "material-ui/svg-icons/social/person"
-import Folder from "material-ui/svg-icons/file/folder"
-import Email from "material-ui/svg-icons/communication/email"
-import { Tabs, Tab } from "material-ui/Tabs"
+import { Person, Email } from '@material-ui/icons';
+import Tab from '@material-ui/core/Tab';
+import Tabs from '@material-ui/core/Tabs';
 import SwipeableViews from "react-swipeable-views"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
@@ -12,149 +11,81 @@ const styles = {
     fontSize: 24,
     paddingTop: 16,
     marginBottom: 12,
-    fontWeight: 400
+    fontWeight: 400,
+    fontFamily: ['Source Code Pro', 'monospace', 'monospace'],    
   },
   tab: {
     fontSize: 24,
     backgroundColor: "#FAFAFE",
     color: "#ffa7c4",
-    fontColor: "#ffa7c4"
+    fontColor: "#ffa7c4",
+    fontFamily: ['Source Code Pro', 'monospace', 'monospace'],
+    textTransform: 'none'
   },
   activeTab: {
     fontSize: 24,
     backgroundColor: "#FAFAFE",
     color: "#ffa7c4",
-    textDecoration: "underline"
+    textDecoration: "none",
+    fontFamily: ['Source Code Pro', 'monospace', 'monospace'],
+
   },
   tabs: {
     backgroundColor: "#FAFAFE",
-    justifyContent: "center"
+    justifyContent: "center",
+    fontFamily: 'Source Code Pro',
+    textTransform: 'none'
   },
   displayNone: {
     display: "none"
   }
 }
-class DropDown extends Component {
+
+
+
+class DropDown extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      slideIndex: 0,
+      index: 0,
       animateTransitions: false
     }
+}
+handleChange = value => {
+  if (this.state.slideIndex === 0 || value === 0) {
+    this.setState({ animateTransitions: false })
   }
-  handleChange = value => {
-    if (this.state.slideIndex === 0 || value === 0) {
-      this.setState({ animateTransitions: false })
-    }
-    this.setState({
-      slideIndex: value
-    })
-    this.props.showPage()
-  }
-  onTransitionEnd() {
-    if (this.state.slideIndex !== 0) {
-      this.setState({ animateTransitions: true })
-    } else {
-      this.props.resetPage()
-    }
-  }
+  this.setState({
+    slideIndex: value
+  })
+  this.props.showPage()
+}
+onTransitionEnd() {
+  if (this.state.slideIndex !== 0) {
+    this.setState({ animateTransitions: true })
+  } else {
+    this.props.resetPage()
+}
+}
+
   render() {
+    const { index } = this.state;
+
     return (
-      <div id="menyTabsDiv">
-        <MyTabs
-          handleChange={this.handleChange.bind(this)}
-          slideIndex={this.state.slideIndex}
-        />
-        <SwipeableViews
-          animateTransitions={this.state.animateTransitions}
-          index={this.state.slideIndex}
-          onChangeIndex={this.handleChange}
-          onTransitionEnd={this.onTransitionEnd.bind(this)}
-        >
+      <div>
+        <Tabs style={styles.tabs} value={index} onChange={this.handleChange}>
+          <Tab style={styles.displayNone} value={0} />
+          <Tab style={styles.tab} value={1} label="> me"/>
+          <Tab style={styles.tab} value={2} label="> about" />
+        </Tabs>
+        <SwipeableViews index={index} onChangeIndex={this.handleChangeIndex} animateTransitions={this.state.animateTransitions}>
           <div />
-          <div>
-            <About />
-          </div>
-          <div style={styles.slide}>
-            <Contact />
-          </div>
+          <div style={Object.assign({},styles.slide)} value={1}><About/></div>
+          <div style={Object.assign({},styles.slide)} value={2}><Contact/></div>
         </SwipeableViews>
       </div>
-    )
+    );
   }
 }
 
-class MyTabs extends Component {
-  render() {
-    return (
-      <div>
-        <span className="desktopOnly">
-          <Tabs
-            inkBarStyle={{ display: "none" }}
-            tabItemContainerStyle={styles.tabs}
-            onChange={this.props.handleChange}
-            value={this.props.slideIndex}
-          >
-            <Tab style={styles.displayNone} value={0} />
-            <Tab
-              style={
-                this.props.slideIndex === 1 ? styles.activeTab : styles.tab
-              }
-              label="me"
-              value={1}
-            />
-            <Tab
-              style={
-                this.props.slideIndex === 2 ? styles.activeTab : styles.tab
-              }
-              label="contact"
-              value={2}
-            />
-          </Tabs>
-        </span>
-        <span className="mobileOnly">
-          <Tabs
-            inkBarStyle={{ display: "none" }}
-            tabItemContainerStyle={styles.tabs}
-            onChange={this.props.handleChange}
-            value={this.props.slideIndex}
-          >
-            <Tab style={styles.displayNone} value={0} />
-            <Tab
-              style={styles.tab}
-              icon={
-                <span
-                  className={
-                    this.props.slideIndex === 1
-                      ? "menuIconsActive"
-                      : "menuIcons"
-                  }
-                >
-                  <Person />
-                </span>
-              }
-              value={1}
-            />
-            <Tab
-              style={styles.tab}
-              icon={
-                <span
-                  className={
-                    this.props.slideIndex === 2
-                      ? "menuIconsActive"
-                      : "menuIcons"
-                  }
-                >
-                  {" "}
-                  <Email />
-                </span>
-              }
-              value={2}
-            />
-          </Tabs>
-        </span>
-      </div>
-    )
-  }
-}
-export default DropDown
+export default DropDown;

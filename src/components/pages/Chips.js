@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import Avatar from "@material-ui/core/Avatar"
 import Paper from "@material-ui/core/Paper"
-import MyChips from "./Chips"
+import Chip from "@material-ui/core/Chip"
 
 class About extends Component {
   render() {
@@ -18,7 +18,7 @@ class About extends Component {
             <p>
               I am a quick-learning and flexible DevOps Engineer with a highly logical mind-set, excellent interpersonal skills, and a wealth of experience in customer-facing DevOps consultancy for leading global Cloud Service Providers, and the UK’s premier Microsoft Azure and Microsoft System Center specialists.
             </p>
-            <MyChips />
+            <Chips />
             <SocialMediaDesktop />
             <SocialMediaPhone />
           </div>
@@ -37,7 +37,29 @@ const styles = {
     flexWrap: "wrap"
   }
 }
-
+class Chips extends Component {
+  render() {
+    return (
+      <div id="listAbout">
+        <h3>Skills / Knowledge</h3>
+        <div style={styles.wrapper}>
+        <Chip label="DevOps" className={classes.chip} variant="outlined" style={styles.chip}/>
+        <Chip label="Azure" className={classes.chip} variant="outlined" style={styles.chip}/>
+        <Chip label="AWS" className={classes.chip} variant="outlined" style={styles.chip}/>
+        <Chip label="Windows Server" className={classes.chip} variant="outlined" style={styles.chip}/>
+        <Chip label="Linux" className={classes.chip} variant="outlined" style={styles.chip}/>
+        <Chip label="git" className={classes.chip} variant="outlined" style={styles.chip}/>
+        <Chip label="CI/CD" className={classes.chip} variant="outlined" style={styles.chip}/>
+        <Chip label="SQL" className={classes.chip} variant="outlined" style={styles.chip}/>
+        <Chip label="Docker" className={classes.chip} variant="outlined" style={styles.chip}/>
+        <Chip label="OpenShift/OKD" className={classes.chip} variant="outlined" style={styles.chip}/>
+        <Chip label="Kubrenetes" className={classes.chip} variant="outlined" style={styles.chip}/>
+        <Chip label="System Center" className={classes.chip} variant="outlined" style={styles.chip}/>
+        </div>
+      </div>
+    )
+  }
+}
 class SocialMediaPhone extends Component {
   render() {
     return (
